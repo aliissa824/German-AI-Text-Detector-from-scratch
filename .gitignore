@@ -1,0 +1,76 @@
+# =========================================================
+# German AI Text Detector - .gitignore
+# =========================================================
+
+# ---------- Secrets & API keys ----------
+# Never push keys. Only .env.example (empty values) is allowed.
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+
+# ---------- Data ----------
+# All data lives in data/ and stays local.
+# (The dataset is shared via Hugging Face, not GitHub.)
+data/
+
+# ---------- Models & checkpoints ----------
+models/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+*.joblib
+*.pkl
+
+# ---------- Experiment tracking ----------
+mlruns/
+mlartifacts/
+wandb/
+
+# ---------- Caches ----------
+.cache/
+hf_cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Python environments & builds ----------
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# ---------- Testing / coverage ----------
+.coverage
+htmlcov/
+
+# ---------- Logs & temp files ----------
+logs/
+*.log
+*.tmp
+*.swp
+
+# ---------- OS files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Editors / IDEs ----------
+.vscode/
+.idea/
