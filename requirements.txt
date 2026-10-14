@@ -1,0 +1,31 @@
+# Everything the notebooks in steps 01–09 need.
+# The demo in 10_deployment has its own requirements.txt.
+#   pip install -r requirements.txt
+
+# 01 · Human data and 02 · AI data
+requests
+urllib3
+beautifulsoup4
+langdetect
+pymupdf
+openai
+python-dotenv
+
+# 04 · Dataset, 05–06 · baselines, 09 · comparison
+datasets>=3.0
+huggingface_hub
+pandas
+numpy
+scikit-learn
+scipy
+joblib
+matplotlib
+
+# 07 · Fine-tuning and 08 · learning curves
+torch
+transformers>=4.48     # first version with ModernBERT (mmBERT)
+accelerate
+mlflow
+
+# Running the notebooks
+jupyter

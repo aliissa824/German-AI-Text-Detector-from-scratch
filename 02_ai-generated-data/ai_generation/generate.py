@@ -1,11 +1,11 @@
 """Generate the AI-assisted and AI-generated text for each human sample.
 
 For every human sample two files are written, both named <seed_sample_id>.txt:
-  data/raw/ai_assisted/   the human text rewritten and polished by the model
-  data/raw/ai_generated/  a new text on the same topic, written by the model
+  data/ai-assisted/   the human text rewritten and polished by the model
+  data/ai-generated/  a new text on the same topic, written by the model
 
 Existing files are skipped, so a run can be stopped and resumed at any time.
-Every new file is also recorded in data/raw/generation_log.jsonl.
+Every new file is also recorded in data/generation_log.jsonl.
 """
 
 import datetime as dt

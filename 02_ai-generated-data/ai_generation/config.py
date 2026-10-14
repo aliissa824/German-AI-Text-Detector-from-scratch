@@ -7,18 +7,18 @@ Override from the notebook, e.g.:
 
 from pathlib import Path
 
-# Repo root (this file is in <repo>/02_ai_generation/ai_generation/)
+# Repo root (this file is in <repo>/02_ai-generated-data/ai-generation/)
 REPO_ROOT = Path(__file__).resolve().parents[2]
 ENV_FILE = REPO_ROOT / ".env"
 
 # Input: the human data from step 01
-HUMAN_META = REPO_ROOT / "data" / "raw" / "human" / "meta.json"
-HUMAN_DIR = REPO_ROOT / "data" / "raw" / "human" / "human"
+HUMAN_META = REPO_ROOT / "data" / "human" / "meta.json"
+HUMAN_DIR = REPO_ROOT / "data" / "human" / "human"
 
 # Output: one text file per human sample, named <seed_sample_id>.txt
-ASSISTED_DIR = REPO_ROOT / "data" / "raw" / "ai_assisted"
-GENERATED_DIR = REPO_ROOT / "data" / "raw" / "ai_generated"
-LOG_FILE = REPO_ROOT / "data" / "raw" / "generation_log.jsonl"
+ASSISTED_DIR = REPO_ROOT / "data" / "ai-assisted"
+GENERATED_DIR = REPO_ROOT / "data" / "ai-generated"
+LOG_FILE = REPO_ROOT / "data" / "generation_log.jsonl"
 
 MAX_RETRIES = 5
 

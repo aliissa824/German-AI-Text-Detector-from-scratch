@@ -1,3 +1,5 @@
+[← Overview](../)
+
 # 01 · Human data
 
 The human side of the detector: **10,227 samples of German academic writing** from 4,121 documents, all published between 1990 and 2022, before AI writing tools were widely used.
@@ -6,7 +8,7 @@ Every text comes from an open repository, is openly licensed, and was cleaned an
 
 ## Output format
 
-`data/raw/human/meta.json` lists every sample, and each text is saved as `data/raw/human/human/<sample_id>.txt`. Ten real examples:
+`data/human/meta.json` lists every sample, and each text is saved as `data/human/human/<sample_id>.txt`. Ten real examples:
 
 | sample_id | source | year | document_type | target_length | actual_word_count | license_name |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -21,7 +23,7 @@ Every text comes from an open repository, is openly licensed, and was cleaned an
 | 7870 | pedocs | 2021 | BookPart | 50 | 44 | CC BY-SA |
 | 8296 | ssoar | 2006 | Monographie | 600 | 426 | CC BY-SA |
 
-Each sample also stores `file`, `split`, `title`, `label` (`human`, turned into `0` in step 03), `source_name`, `source_type`, `document_id`, `author`, the full `publication_date` and its `date_basis`, `character_count`, `context_before` (~120 words before the chunk), `spelling_modernized`, `license_url`, `source_url`, `hash` (SHA-256 of the text, used to find duplicates) and `retrieval_date`.
+Each sample also stores `file`, `split`, `title`, `label` (`human`, turned into `0` in step 04), `source_name`, `source_type`, `document_id`, `author`, the full `publication_date` and its `date_basis`, `character_count`, `context_before` (~120 words before the chunk), `spelling_modernized`, `license_url`, `source_url`, `hash` (SHA-256 of the text, used to find duplicates) and `retrieval_date`.
 
 ## At a glance
 
@@ -114,8 +116,8 @@ All chunks of a document land in the same split (train / validation / test), dec
 
 ## How to run
 
-Open `collect_human_data.ipynb` and run the cells. Settings are in `human_data/config.py`; for a quick test, set `cfg.TARGET_PER_SOURCE = 30`. Output goes to `data/raw/human/`. Collection resumes where it stopped, so it can be interrupted at any time.
+Open `collect_human_data.ipynb` and run the cells. Settings are in `human_data/config.py`; for a quick test, set `cfg.TARGET_PER_SOURCE = 30`. Output goes to `data/human/`. Collection resumes where it stopped, so it can be interrupted at any time.
 
 ---
 
-**Next:** [02 · AI data →](../02_ai-generated-data/)
+[← Overview](../) -- [02 · AI data →](../02_ai-generated-data/)

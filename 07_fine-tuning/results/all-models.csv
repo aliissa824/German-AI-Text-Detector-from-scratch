@@ -1,0 +1,6 @@
+model,base_model,parameters,run_by,seed,val_accuracy,test_accuracy,test_macro_f1,test_error_human,test_error_ai_generated,test_error_ai_assisted,test_human_vs_ai_accuracy,temperature
+distilbert-german,distilbert/distilbert-base-german-cased,~66M,Ali,42,0.9088,0.9130,0.9131,0.2013,0.0219,0.0373,0.9236,2.412
+mmbert-small,jhu-clsp/mmBERT-small,~140M,Ali,42,0.9587,0.9635,0.9635,0.0460,0.0121,0.0516,0.9682,3.448
+xlm-roberta-base,FacebookAI/xlm-roberta-base,~280M,Ali,42,0.9277,0.9277,0.9275,0.1783,0.0099,0.0285,0.9339,2.400
+mmbert-base,jhu-clsp/mmBERT-base,~310M,Hassan,17,0.9666,0.9664,,0.0558,0.0099,0.0351,,3.112
+gelectra-large,deepset/gelectra-large,~335M,Hassan,17,0.9652,0.9689,,0.0470,0.0154,0.0307,,1.911

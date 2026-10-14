@@ -74,3 +74,13 @@ desktop.ini
 # ---------- Editors / IDEs ----------
 .vscode/
 .idea/
+
+# MLflow and training leftovers
+mlflow.db
+mlflow-local/
+mlflow-*.zip
+results-*.zip
+checkpoints/
+
+10_deployment/
+.github/

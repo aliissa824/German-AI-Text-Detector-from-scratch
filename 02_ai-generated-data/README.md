@@ -34,13 +34,13 @@ New runs also record every file in `data/generation_log.jsonl`: model, strategy,
 
 | Model | Company | Access | AI-generated | AI-assisted |
 |---|---|---|---|---|
-| GPT-5.6 Luna | OpenAI | Azure OpenAI | 2,491 | 2,489 |
+| GPT-5.6 Luna | OpenAI | Azure OpenAI | 2,491 | 2,488 |
 | Gemini 3.8 Flash | Google | Gemini API | 2,494 | 2,493 |
 | DeepSeek V4 Flash | DeepSeek | DeepSeek API | 2,497 | 2,500 |
 | GPT-6 Luna | OpenAI | Azure OpenAI | 2,721 | 2,718 |
-| **Total** | | | **10,203** | **10,200** |
+| **Total** | | | **10,203** | **10,199** |
 
-Each model worked on its own share of the human samples. A few requests failed for good, so 24 human samples have no AI-generated partner and 27 no AI-assisted one.
+Each model worked on its own share of the human samples. A few requests failed for good or were left out (see below), so 24 human samples have no AI-generated partner and 28 no AI-assisted one.
 
 ## Things we ran into
 
@@ -72,7 +72,7 @@ The AI-generated prompt asks for the same length as the human text, ±20%. Most 
 
 Long runs hit rate limits, empty answers and, once, a Gemini account that ran out of credits halfway through. The code skips files that already exist, so a run can be restarted and only fills the gaps.
 
-20 requests (14 AI-assisted, 6 AI-generated) were refused: instead of a text, the model answered with a one-line refusal like *"I'm sorry, but I cannot assist with that request."* These are not part of the dataset. The code now rejects answers shorter than half the human text and retries them.
+20 requests (14 AI-assisted, 6 AI-generated) were refused: instead of a text, the model answered with a one-line refusal like *"I'm sorry, but I cannot assist with that request."* These are not part of the dataset, and neither is one "rewrite" that returned the human text unchanged. The code now rejects answers shorter than half the human text and retries them.
 
 ## How to run
 
@@ -80,6 +80,19 @@ Put your API keys in the `.env` file in the repo root (see `.env.example`). Then
 
 All prompts are in `ai_generation/prompts.py`, exactly as used for the dataset. Models, ID ranges and prompt strategies are in `ai_generation/config.py`.
 
+## Folder contents
+
+```
+02_ai-generated-data/
+├── README.md
+├── generate_ai_data.ipynb     ← run this
+└── ai_generation/
+    ├── config.py              ← paths, models, prompt strategy per model
+    ├── prompts.py             ← all prompts
+    ├── clients.py             ← Azure, DeepSeek and Gemini behind one function
+    └── generate.py            ← generate, resume, log, find gaps
+```
+
 ---
 
-[← 01 · Human data](../01_human-data/) -- [03 · Pangram Test →](../03_pangram-test/)
+[← 01 · Human data](../01_human-data/) -- [03 · Pangram check →](../03_pangram-test/)

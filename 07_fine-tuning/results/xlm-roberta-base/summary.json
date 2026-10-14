@@ -1,0 +1,14 @@
+{
+  "model_key": "xlm-roberta-base",
+  "model_name": "FacebookAI/xlm-roberta-base",
+  "temperature": 2.3997266891847753,
+  "train_minutes": 196.0664746761322,
+  "val_accuracy": 0.9277357192016518,
+  "test_accuracy": 0.927658019729631,
+  "test_macro_f1": 0.9275063023976949,
+  "test_error_human": 0.17833698030634573,
+  "test_error_ai_generated": 0.009868421052631578,
+  "test_error_ai_assisted": 0.02854006586169045,
+  "test_human_vs_ai_accuracy": 0.9338691998538546,
+  "test_human_flagged": 0.17833698030634573
+}

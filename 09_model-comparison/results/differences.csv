@@ -1,0 +1,6 @@
+model,vs,difference,low,high,real
+mmBERT-small,XLM-RoBERTa base,0.0358,0.0266,0.0451,yes
+mmBERT-small,TF-IDF,0.0475,0.0365,0.058,yes
+XLM-RoBERTa base,DistilBERT German,0.0146,0.005,0.0245,yes
+XLM-RoBERTa base,TF-IDF,0.0117,0.0004,0.023,yes
+DistilBERT German,TF-IDF,-0.0029,-0.0157,0.0095,no

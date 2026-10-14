@@ -1,0 +1,14 @@
+{
+  "model_key": "mmbert-small",
+  "model_name": "jhu-clsp/mmBERT-small",
+  "temperature": 3.4476063379243023,
+  "train_minutes": 108.23184640010199,
+  "val_accuracy": 0.9587061252580867,
+  "test_accuracy": 0.9634636463280964,
+  "test_macro_f1": 0.9635295125550712,
+  "test_error_human": 0.045951859956236324,
+  "test_error_ai_generated": 0.01206140350877193,
+  "test_error_ai_assisted": 0.05159165751920966,
+  "test_human_vs_ai_accuracy": 0.9682133723054439,
+  "test_human_flagged": 0.045951859956236324
+}

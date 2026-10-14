@@ -1,0 +1,37 @@
+generator_model,source,texts,error,model
+deepseek-flash,pedocs,183,0.2951,TF-IDF
+deepseek-flash,refubium,9,0.2222,TF-IDF
+gemini-3.8-flash,refubium,90,0.0778,TF-IDF
+gemini-3.8-flash,ssoar,163,0.1104,TF-IDF
+gpt-5.6-luna,pedocs,12,0.1667,TF-IDF
+gpt-5.6-luna,refubium,20,0.1,TF-IDF
+gpt-5.6-luna,ssoar,171,0.0936,TF-IDF
+gpt-6-luna,pedocs,73,0.0822,TF-IDF
+gpt-6-luna,ssoar,190,0.0789,TF-IDF
+deepseek-flash,pedocs,183,0.0929,DistilBERT German
+deepseek-flash,refubium,9,0.1111,DistilBERT German
+gemini-3.8-flash,refubium,90,0.0333,DistilBERT German
+gemini-3.8-flash,ssoar,163,0.0061,DistilBERT German
+gpt-5.6-luna,pedocs,12,0.0,DistilBERT German
+gpt-5.6-luna,refubium,20,0.0,DistilBERT German
+gpt-5.6-luna,ssoar,171,0.0175,DistilBERT German
+gpt-6-luna,pedocs,73,0.0137,DistilBERT German
+gpt-6-luna,ssoar,190,0.0421,DistilBERT German
+deepseek-flash,pedocs,183,0.0656,XLM-RoBERTa base
+deepseek-flash,refubium,9,0.0,XLM-RoBERTa base
+gemini-3.8-flash,refubium,90,0.0333,XLM-RoBERTa base
+gemini-3.8-flash,ssoar,163,0.0184,XLM-RoBERTa base
+gpt-5.6-luna,pedocs,12,0.0833,XLM-RoBERTa base
+gpt-5.6-luna,refubium,20,0.0,XLM-RoBERTa base
+gpt-5.6-luna,ssoar,171,0.0175,XLM-RoBERTa base
+gpt-6-luna,pedocs,73,0.0137,XLM-RoBERTa base
+gpt-6-luna,ssoar,190,0.0158,XLM-RoBERTa base
+deepseek-flash,pedocs,183,0.1311,mmBERT-small
+deepseek-flash,refubium,9,0.0,mmBERT-small
+gemini-3.8-flash,refubium,90,0.0222,mmBERT-small
+gemini-3.8-flash,ssoar,163,0.0184,mmBERT-small
+gpt-5.6-luna,pedocs,12,0.0833,mmBERT-small
+gpt-5.6-luna,refubium,20,0.0,mmBERT-small
+gpt-5.6-luna,ssoar,171,0.0468,mmBERT-small
+gpt-6-luna,pedocs,73,0.0274,mmBERT-small
+gpt-6-luna,ssoar,190,0.0368,mmBERT-small

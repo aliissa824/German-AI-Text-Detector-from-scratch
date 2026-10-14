@@ -1,0 +1,14 @@
+{
+  "model_key": "distilbert-german",
+  "model_name": "distilbert/distilbert-base-german-cased",
+  "temperature": 2.412375639367385,
+  "train_minutes": 95.53956396182379,
+  "val_accuracy": 0.9088093599449415,
+  "test_accuracy": 0.9130434782608695,
+  "test_macro_f1": 0.9130672055337579,
+  "test_error_human": 0.2013129102844639,
+  "test_error_ai_generated": 0.021929824561403508,
+  "test_error_ai_assisted": 0.03732162458836443,
+  "test_human_vs_ai_accuracy": 0.9236390208257216,
+  "test_human_flagged": 0.2013129102844639
+}

@@ -17,11 +17,11 @@ from pathlib import Path
 MIN_PUBLICATION_DATE = dt.date(1990, 1, 1)
 CUTOFF_DATE = dt.date(2022, 12, 31)
 
-# Repo root (this file is in <repo>/01_human_data/human_data/)
+# Repo root (this file is in <repo>/01_human-data/human_data/)
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
-# Output: meta.json + human/<id>.txt
-DATA_DIR = REPO_ROOT / "data" / "raw" / "human"
+# Output: data/human/meta.json + data/human/human/<id>.txt
+DATA_DIR = REPO_ROOT / "data" / "human"
 
 # Chunks per source.
 # Small test run: 30 (about 10 documents per source)
