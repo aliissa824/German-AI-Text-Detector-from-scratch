@@ -82,5 +82,3 @@ mlflow-*.zip
 results-*.zip
 checkpoints/
 
-10_deployment/
-.github/

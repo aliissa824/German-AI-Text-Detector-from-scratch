@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "German Academic AI-Text Detector: Human-Written, AI-Generated and AI-Assisted German Academic Text"
+type: software
+authors:
+  - family-names: Issa
+    given-names: Ali
+  - family-names: Hijazi
+    given-names: Hassan
+repository-code: "https://github.com/aliissa824/German-AI-Text-Detector-from-scratch"
+url: "https://huggingface.co/aliissa824"
+license: MIT
+date-released: 2026-10-14
+keywords:
+  - AI text detection
+  - AI-assisted writing
+  - German
+  - academic writing
+  - natural language processing
+  - text classification
+  - transformers
+abstract: >-
+  A three-class detector that classifies German academic text as
+  human-written, AI-generated, or AI-assisted (human text rewritten and
+  polished by a language model). The project builds a dataset of 30,629
+  texts from openly licensed German academic papers and four AI models,
+  and compares a zero-shot LLM, a TF-IDF baseline and five fine-tuned
+  transformer models, including significance tests, learning curves and
+  an analysis of which texts are hardest to detect.

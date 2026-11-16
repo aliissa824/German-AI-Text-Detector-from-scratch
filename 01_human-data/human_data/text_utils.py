@@ -367,7 +367,11 @@ def split_into_sentences(text):
         if is_sentence_end(text, i):
             end = i + 1
 
-            while end < len(text) and text[end] in CLOSING_CHARACTERS:
+            while end < len(text) and (
+                text[end] in CLOSING_CHARACTERS
+                # German closing quote: „…“ (only if a „ is still open)
+                or (text[end] == "“" and text.count("„", start, end) > text.count("“", start, end))
+            ):
                 end += 1
 
             sentence = text[start:end].strip()

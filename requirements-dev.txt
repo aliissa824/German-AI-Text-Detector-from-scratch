@@ -1,0 +1,11 @@
+# What the tests need (steps 01 and 02 only), without the heavy ML packages.
+#   pip install -r requirements-dev.txt
+#   pytest
+pytest
+requests
+urllib3
+beautifulsoup4
+langdetect
+pymupdf
+openai
+python-dotenv
