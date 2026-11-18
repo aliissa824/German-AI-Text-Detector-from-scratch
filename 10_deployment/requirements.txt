@@ -1,8 +1,0 @@
-# Runtime (the Docker image installs torch separately, as the smaller CPU-only build)
-fastapi>=0.115
-uvicorn[standard]>=0.30
-pydantic>=2.7
-transformers>=4.48     # 4.48 is the first version with ModernBERT, which mmBERT is built on
-huggingface_hub>=0.25
-python-dotenv>=1.0     # reads HF_TOKEN from the repo's .env when running locally
-torch>=2.3

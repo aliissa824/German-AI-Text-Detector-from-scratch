@@ -15,6 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [
     str(REPO_ROOT / "01_human-data"),
     str(REPO_ROOT / "02_ai-generated-data"),
+    str(REPO_ROOT / "10_humanizer-attack"),
     str(REPO_ROOT / "tests"),
 ]
 
