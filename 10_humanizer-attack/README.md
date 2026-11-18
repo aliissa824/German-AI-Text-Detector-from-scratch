@@ -58,6 +58,8 @@ On average, 5 words per AI text and 3 per human text were swapped. The content n
 
 The swap rules are tested in `tests/unit/test_humanizer.py` (runs in CI). `tests/behavioral/test_model_behavior.py` checks the real mmBERT-small on single texts: spaces, quotes, numbers and names must not change the result, and formal wording must not make a text look more human. Run them with `pytest -m behavioral` (downloads the model).
 
+One finding: no human text in the dataset contains a line break, but 73% of AI-generated and 53% of AI-assisted texts do. The model learned this as a shortcut: two line breaks are enough to flip a human text to AI-assisted. The test is marked as a known weakness (`xfail`) until the data is fixed.
+
 ## How to run
 
 Open `humanizer_attack.ipynb` on a GPU with `HF_TOKEN` set (the dataset is private) and run all cells.
