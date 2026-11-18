@@ -112,4 +112,4 @@ Open `model_comparison.ipynb` and run all cells. It reads the saved predictions 
 
 ---
 
-[← 08 · Learning curves](../08_learning-curves/) -- [Back to overview →](../)
+[← 08 · Learning curves](../08_learning-curves/) -- [10 · Humanizer attack →](../10_humanizer-attack/)(../)

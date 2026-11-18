@@ -1,0 +1,21 @@
+model,version,Human texts flagged,AI texts caught,AI-generated caught,AI-assisted caught
+TF-IDF,formalized,0.2473,,,
+TF-IDF,light,,0.7559,0.9825,0.5291
+TF-IDF,original,0.0853,0.9424,0.9956,0.8891
+TF-IDF,strong,,0.7543,0.9825,0.5258
+DistilBERT German,formalized,0.4661,,,
+DistilBERT German,light,,0.8519,0.9945,0.7091
+DistilBERT German,original,0.2013,0.9863,1.0,0.9726
+DistilBERT German,strong,,0.8481,0.9945,0.7014
+XLM-RoBERTa base,formalized,0.36,,,
+XLM-RoBERTa base,light,,0.8694,0.9967,0.742
+XLM-RoBERTa base,original,0.1783,0.9901,1.0,0.9802
+XLM-RoBERTa base,strong,,0.8722,0.9967,0.7475
+mmBERT-small,formalized,0.1039,,,
+mmBERT-small,light,,0.8711,0.9945,0.7475
+mmBERT-small,original,0.046,0.9753,0.9989,0.9517
+mmBERT-small,strong,,0.8705,0.9945,0.7464
+mmBERT-base,formalized,0.151,,,
+mmBERT-base,light,,0.8788,0.9879,0.7695
+mmBERT-base,original,0.0733,0.9819,1.0,0.9638
+mmBERT-base,strong,,0.8749,0.9879,0.7618
